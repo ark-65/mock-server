@@ -1,5 +1,14 @@
 # mock-server
 
+>这是一个简易版方便前端 mock 数据的一个 server proxy
+> 
+>如请求 `http://test.ark.io/api/test` 接口,当 `/test` 没有被 mock 的时候,会请求原始接口,并携带 cookie 等信息,来响应前端请求
+
+## 运行
+```
+npm run start
+```
+
 ## 目录结构
 
 ```
