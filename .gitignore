@@ -225,3 +225,4 @@ dist
 # custom config
 constants/
 constants/*
+!constants/index.ts
