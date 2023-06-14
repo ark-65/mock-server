@@ -1,5 +1,3 @@
-// server.ts
-
 import express from "express";
 import apiRoutes from "./routes/api/index";
 import { API_PREFIX } from "./constants";
