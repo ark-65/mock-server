@@ -222,3 +222,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+constants/
