@@ -226,3 +226,6 @@ dist
 constants/
 constants/*
 !constants/index.ts
+
+data/
+!data/index.ts
