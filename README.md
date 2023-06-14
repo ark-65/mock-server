@@ -16,7 +16,7 @@ npm run start
 
 ```
 mock-server/
-  ├── server.ts               # 入口文件，用于启动服务器
+  ├── server.ts               # 入口文件，用于启动服务
   ├── constants/              # 存储配置的常量(!!!需要自己新建,因为其中可能包括一些铭感数据,所以非必要不要提交)
   │   ├── index.ts            # 常量导出文件
   │   └── api-prefix.ts       # api, cookie 等常量
@@ -24,7 +24,7 @@ mock-server/
   │   ├── index.ts            # 主路由处理程序
   │   └── api/                # 子路由处理程序（可根据需要进行拆分）
   │       └── mock.ts         # 模拟数据路由处理程序
-  ├── data/                   # 存放模拟数据文件
+  ├── data/                   # 存放模拟数据文件(mock 数据存在这,也需要自己新建,其中可能包括业务数据)
   │   ├── a-b-c.json          # a/b/c 接口的模拟数据
   │   └── x-y-z.json          # x/y/z 接口的模拟数据
   ├── package.json            # 项目配置文件
