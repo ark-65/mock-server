@@ -16,7 +16,7 @@ npm run start
 
 ```
 mock-server/
-  ├── server.ts               # 入口文件，用于启动服务器
+  ├── server.ts               # 入口文件，用于启动服务
   ├── constants/              # 存储配置的常量(!!!需要自己新建,因为其中可能包括一些铭感数据,所以非必要不要提交)
   │   ├── index.ts            # 常量导出文件
   │   └── api-prefix.ts       # api, cookie 等常量
