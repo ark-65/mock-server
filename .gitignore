@@ -224,3 +224,4 @@ dist
 
 # custom config
 constants/
+constants/*
