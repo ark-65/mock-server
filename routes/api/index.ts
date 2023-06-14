@@ -1,15 +1,13 @@
 import express from "express";
 import axios from "axios";
 import { API_PREFIX, COOKIE, DOMAIN } from "../../constants";
-import qs from 'qs'; // 引入 qs 库
+import qs from "qs";
+import { versionMock } from "../../data"; // 引入 qs 库
 
 const router = express.Router();
 
 // 模拟数据
-const mockData: { [key: string]: { message: string } } = {
-  a: { message: "Mocked data for a" },
-  b: { message: "Mocked data for b" },
-};
+const mockData = versionMock;
 
 router.all("*", async (req, res) => {
   const fullPath = req.originalUrl; // 获取完整的路径
@@ -33,9 +31,9 @@ router.all("*", async (req, res) => {
 
   // 获取请求方法和 payload
   const method = req.method;
-  const payload = method === 'GET' ? qs.stringify(req.query) : req.body;
-  console.log('Request Method:', method);
-  console.log('Request Payload:', payload);
+  const payload = method === "GET" ? qs.stringify(req.query) : req.body;
+  console.log("Request Method:", method);
+  console.log("Request Payload:", payload);
 
   // 获取 URL 中问号后面的参数
   const queryParams = req.query;
@@ -66,6 +64,5 @@ router.all("*", async (req, res) => {
     }
   }
 });
-
 
 export default router;
