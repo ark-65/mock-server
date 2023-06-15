@@ -48,7 +48,8 @@ router.all("*", async (req, res) => {
       // 不存在 mock 数据，转发请求到后端
       const url = `${DOMAIN}${fullPath}`;
 
-      const response = await axios.get(url, {
+      const response = await axios(url, {
+        method,
         headers: {
           Authorization: token, // 将 Token 添加到请求头中
           Cookie: COOKIE, // 将 Cookie 添加到请求头中
