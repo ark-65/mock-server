@@ -41,8 +41,11 @@ router.all("*", async (req, res) => {
 
   // 检查本地是否存在对应的 mock 数据
   if (mockData.hasOwnProperty(subRoute)) {
-    const data = mockData[subRoute];
-    res.json(data);
+    const mockFn = mockData[subRoute];
+    if (mockFn) {
+      const data = mockFn(req.query);
+      res.json(data);
+    }
   } else {
     try {
       // 不存在 mock 数据，转发请求到后端
