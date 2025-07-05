@@ -222,10 +222,3 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# custom config
-constants/
-constants/*
-!constants/index.ts
-
-data/
-!data/index.ts

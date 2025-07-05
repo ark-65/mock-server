@@ -1,0 +1,1 @@
+export const DOMAIN = 'https://www.baidu.com';
